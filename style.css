@@ -1,0 +1,237 @@
+body{
+    background: #D8DFE8;
+}
+
+/*header*/
+header{
+    background: white;
+    border-radius: 10px;
+    margin: 15px;
+    /*color: #646d79;
+    color: #0A3871;*/
+}
+.logo, .logo2{
+    position: absolute;
+    top: 35px;
+}
+.logo{
+    left: 1%;
+}
+.logo2{
+    right: 1%;
+}
+.titulo{
+    font-family: "Yeseva One", serif;
+    font-weight:bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0;
+}
+.titulo-des{
+    color: #646d79;
+}
+.titulo-en{
+    color: #0A3871;
+}
+
+/*main*/
+main{
+    margin: 15px;
+}
+
+.texto-encriptar{
+    width: 67.5%;
+    height: 670px;
+    display: inline-block;
+    margin: 15px;
+    margin-left: 30px;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+    
+}
+#por-encriptar{
+    width: 100%;
+    height: 570px;
+    margin-bottom: 15px;
+    border-width: 0;
+    background: #D8DFE8;
+    font-family: "Faustina", serif;
+    font-size: 25px;
+    text-align: center;
+    color: #0A3871;
+}
+#por-encriptar:focus{ /*Para que, cuando está seleccionado el input no se muetre el borde por defecto*/
+    outline: none;
+}
+#encriptar, #desencriptar, #copiar{
+    width: 200px;
+    height: 50px;
+    margin: 15px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #0A3871;
+    background: #0A3871;
+    color: white;
+    font-family: "Faustina", serif;
+    font-size: 15px;
+    box-shadow: 0 0 5px 1px #646d79;
+}
+#desencriptar{
+    background: white;
+    color: #0A3871;
+}
+#encriptar:hover, #desencriptar:hover, #copiar:hover{
+    background: black;
+    color: white;
+    border-color: black;
+}
+.texto-encriptado{
+    width: 20%;
+    height: 670px;
+    display: inline-block;
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 1px #646d79;
+}
+#caja-encriptado{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#muñeco{
+    width: 100%;
+    margin: 15px 0;
+}
+#sin-texto{
+    margin: 15px;
+    font-family: "Yeseva One", serif;
+    color: #0A3871;
+}
+#ingresa-texto{
+    margin: 15px;
+    font-family: "Faustina", serif;
+    font-weight: 500;
+    color: #31363b;
+}
+#encriptado{
+    margin: 15px;
+    font-family: "Faustina", serif;
+    font-weight: 500;
+    color: #31363b;
+    font-size: 20px;
+}
+/*footer*/
+footer{
+    width: 70%;
+    background: white;
+    border-radius: 10px;
+    margin: 15px 15%;
+    padding: 15px 0;
+}
+.foot{
+    display: flex;
+}
+.foot *{
+    /*display: inline-block;*/
+    margin: auto;
+}
+.git img{
+    width: 55px;
+}
+.git{
+    margin-left: 30px;
+}
+.img-dev{
+    width: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.copy{
+    font-family: "Yeseva One", serif;
+    margin-left: 10px;
+}
+.link img{
+    width: 50px;
+}
+.link{
+    margin-right: 30px;
+}
+
+@media screen and (max-width:1160px){
+    .texto-encriptar{
+        width: 93%;
+        height: 59%;
+    }
+    #por-encriptar{
+        height: 86%;
+    }
+    .texto-encriptado{
+        width: 93%;
+        height: auto;
+    }
+    #caja-encriptado{
+        position: relative;
+        transform: translateY(0%);
+    }
+    #muñeco{
+        display: none;
+    }
+    #sin-texto, #ingresa-texto{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:810px){
+    .img-dev{
+        order: 1;
+        margin-left: 3%;
+        width: 15%;
+    }
+    .copy{
+        order: 2;
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .git{
+        order: 3;
+        margin-left: 3%;
+        margin-right: 1%;
+        width: 10%;
+    }
+    .git img{
+        width: 100%;
+    }
+    .link{
+        order: 4;
+        margin-right: 3%;
+        width: 10%;
+    }
+    .link img{
+        width: 95%;
+    }
+}
+@media screen and (max-width:580px){
+    .logo, .logo2{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:542px){
+    main{ 
+        margin: 0;
+    }
+    .texto-encriptar{
+        margin-left: 15px;
+        width: 88%;
+    }
+    #por-encriptar{
+        height: 70%;
+    }
+    .texto-encriptado{
+        width: 88%;
+    }
+}

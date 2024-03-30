@@ -1,0 +1,54 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/Logo.png" alt="logo-alura">
+        </div>
+        <div class="titulo">
+            <h1 class="titulo-en">Encriptador de texto</h1>
+            <h1 class="titulo-des">Desencriptador de texto</h1>
+        </div>
+        <div class="logo2">
+            <img src="imagenes/Logo.png" alt="logo-alura">
+        </div>
+    </header>
+    <main>
+        <section class="texto-encriptar">
+            <div>
+                <input type="text" id="por-encriptar" placeholder="Ingrese el texto aquí">
+                <p class="letrero"><img src="imagenes/mingcute--close-circle-fill.svg" alt="icono-brohibido">Solo letras minúsculas, sin caracteres especiales</p>
+                <button id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="texto-encriptado">
+            <div id="caja-encriptado">
+                <p id="encriptado" hidden></p>
+                <button id="copiar" onclick="copia()" hidden >Copiar</button>
+                <img src="imagenes/Muñeco.png" alt="imagen-muñeco" id="muñeco">
+                <p id="sin-texto">Ningun mensaje fue encontrado</p>
+                <p id="ingresa-texto">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+    <footer>
+        <div class="foot">
+            <a href="https://github.com/jahb24" class="git"><img src="imagenes/github.png" alt="imagen-github"></a>
+            <img src="imagenes/desarrollador.jpg" alt="imagen-creador" class="img-dev">
+            <p class="copy">&copy; Jorge Aarón Hernández Bustillos</p>
+            <a href="https://www.linkedin.com/in/jahb-icc/" class="link"><img src="imagenes/linkedin.png" alt="imagen-linkedin"></a>
+        </div>
+    </footer>
+</body>
+</html>
